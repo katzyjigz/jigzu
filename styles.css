@@ -1,0 +1,330 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+button {
+    cursor: pointer;
+}
+button:hover {
+    box-shadow: 0% 0% 15px gray;
+}
+body{
+    background-color: darkgray;
+    width: 100%;
+    height: 100vh;
+    background-image: url(splash.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.navbar{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    z-index: 1000;
+    margin-left: 950px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.navbar1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 10px 40px;
+    z-index: 1000;
+
+
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 50px;
+    transition: color 0.2s
+}
+.navbar a:hover{
+    color: white;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    box-shadow: 0 0 5px gray;
+    border-radius: 50%;
+    cursor: pointer;
+    position: center;
+    transition: 1.1 ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.section-home {
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 113vh;
+    padding: 0 10%;
+    margin-top: -100px;
+}
+
+.content {
+    width: 50%;
+    transition: all 0.7s ease-in 0s;
+     animation: fadeInUp 1.4s forwards;
+}
+
+.content h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: left;
+    transition: all 0.7s ease-in 0s;
+}
+
+.content h3 {
+    font-size: 30px;
+    font-weight: 550;
+    color: black;
+}
+.instagram{
+    color: white;
+    transition: color 0.2s;
+    font-size: 50px;
+}
+.instagram:hover{
+    color: gray;
+}
+.facebook{
+    color: white;
+    transition: color 0.2s;
+    font-size: 50px;
+}
+.facebook:hover{
+    color: gray;
+}
+.section-about {
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    padding-top: 72px;
+}
+
+.container-about {
+    color: black;
+}
+.about-images img  {
+    height: 340px;
+    margin-left: 15px;
+    margin-top: 10px;
+    animation: showup 2s;
+    border-radius: 20px;
+}
+.about-images .aboutme1 {
+    transition: all 0.5s;
+}
+.about-images .aboutme1:hover {
+    height: 340px;
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px black;
+}
+.about-images .aboutme2 {
+    transition: all 0.5s;
+}
+
+.about-images .aboutme2:hover {
+    height: 340px;
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px black;
+}
+
+.about-images .aboutme3 {
+    transition: all 0.5s;
+}
+
+.about-images .aboutme3:hover {
+    height: 340px;
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px black; 
+}
+  .blog ul {
+            max-width: 60%;
+            margin: 0 auto;
+            color: #b3b3b3;
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+.blog li {
+            margin: 1em 0;
+}
+.section-blog{
+    background-size: cover;
+    height: 150vh;
+    text-align: center;
+    margin-top: 190px;
+}
+.container-wrapper{
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 150px;
+}
+.glass-container{
+    background: rgba(255, 255 ,255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin-top: 120px;
+    padding: 20px;
+    width: 350px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: black;
+    box-shadow: 0 8px 32px rgba(0, 0 ,0, 0.37);
+    position: relative;
+    flex-shrink: 0;
+    background-image: url(splash.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease;
+    margin-left: 50px;
+}
+.glass-container:hover:nth-child(1){
+    background-image: url("1.jpg");
+ }
+.glass-container:hover:nth-child(2){
+    background-image: url(4.jpg);
+}
+.glass-container:hover:nth-child(3){
+    background-image: url(2.jpg);
+}
+.glass-container:hover:nth-child(4){
+    background-image: url(3.jpg);
+}
+
+.glass-container:hover h3{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.glass-container:hover p{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.glass-container h3{
+    margin-top: 0;
+    color: black;
+}
+.glass-container p{
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+    color:white;
+}
+
+.section-flex-page {
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    padding-top: 72px;
+}
+.section-flex-page{
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 20px;
+}
+.flexpage-image img  {
+    height: 340px;
+    margin-left: 15px;
+    animation: showup 2s;
+    border-radius: 20px;
+}
+
+.picnako1 {
+    transition: all 0.5s;
+}
+.picnako1:hover {
+    height: 340px;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px black;
+}
+footer{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 200px;
+    position: relative;
+    bottom: 0;
+    font-size: 14px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@keyframes fadeInUp{
+    0%{
+        opacity:0;
+        transform: translateX(100%);
+    }
+    40%{
+        opacity: 1;
+        transform: translateX(10);
+    }
+    }   
+video {
+    border: 2.5px solid black; 
+    border-radius: 10px; 
+    box-shadow: 5 5 5px gray;
+    max-width: 100%; 
+    margin-left: 600px;
+    height: 340px;
+    margin-top: -2800px;
+    animation: showup 1s;
+    transition: all 0.5s;
+  }
+video:hover{
+     height: 340px;
+    transform: scale(1.1);
+    box-shadow: 1px 1px 1px black;
+}
+.animation{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.bouncingball{
+    margin-bottom: -900px;
+    margin-top: -350px;
+    width: 500px;
+    border-radius: 10px;
+}
+.stickman{
+    margin-bottom: -1500px;
+    margin-top: -370px;
+    margin-right: 1200px;
+}
